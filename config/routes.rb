@@ -4,4 +4,6 @@ Rails.application.routes.draw do
       resources :messages, only: %i[index]
     end
   end
+
+  root 'api/v1/messages#index'
 end
